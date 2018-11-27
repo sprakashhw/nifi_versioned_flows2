@@ -5,17 +5,54 @@
   "content" : {
     "comments" : "",
     "componentType" : "PROCESS_GROUP",
-    "connections" : [ ],
+    "connections" : [ {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "f894a2e1-983a-3253-a1a0-bc554e55635c",
+        "id" : "646e65a7-9716-331f-9604-9471f2472c19",
+        "name" : "LogAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "f894a2e1-983a-3253-a1a0-bc554e55635c",
+      "identifier" : "0fd1609e-a34d-3bec-98c5-d1f4120bc04a",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "" ],
+      "source" : {
+        "groupId" : "f894a2e1-983a-3253-a1a0-bc554e55635c",
+        "id" : "614e5126-f521-3232-9efa-dc159c851372",
+        "name" : "test",
+        "type" : "INPUT_PORT"
+      },
+      "zIndex" : 0
+    } ],
     "controllerServices" : [ ],
     "funnels" : [ ],
-    "identifier" : "1ec8456f-51dd-38c9-9eb2-799a6a9fb673",
-    "inputPorts" : [ ],
+    "identifier" : "f894a2e1-983a-3253-a1a0-bc554e55635c",
+    "inputPorts" : [ {
+      "componentType" : "INPUT_PORT",
+      "concurrentlySchedulableTaskCount" : 1,
+      "groupIdentifier" : "f894a2e1-983a-3253-a1a0-bc554e55635c",
+      "identifier" : "614e5126-f521-3232-9efa-dc159c851372",
+      "name" : "test",
+      "position" : {
+        "x" : 487.0000335660951,
+        "y" : -10.999990488177673
+      },
+      "type" : "INPUT_PORT"
+    } ],
     "labels" : [ ],
     "name" : "testing",
     "outputPorts" : [ ],
     "position" : {
-      "x" : 684.0,
-      "y" : 246.0
+      "x" : 180.01278420002586,
+      "y" : 316.78742891871974
     },
     "processGroups" : [ ],
     "processors" : [ {
@@ -24,19 +61,19 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "1.7.0.3.2.0.0-520"
+        "version" : "1.8.0.3.3.0.0-126"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
-      "groupIdentifier" : "1ec8456f-51dd-38c9-9eb2-799a6a9fb673",
+      "groupIdentifier" : "f894a2e1-983a-3253-a1a0-bc554e55635c",
       "identifier" : "646e65a7-9716-331f-9604-9471f2472c19",
       "name" : "LogAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 373.0,
-        "y" : 99.0
+        "x" : 437.0,
+        "y" : 121.0
       },
       "properties" : {
         "character-set" : "UTF-8",
